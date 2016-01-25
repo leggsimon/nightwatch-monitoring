@@ -1,0 +1,41 @@
+{
+  "src_folders": ["tests"],
+  "output_folder": "./nw/reports",
+  "selenium": {
+    "start_process": false,
+    "server_path": "",
+    "log_path": ""
+  },
+  "test_settings": {
+    "default": {
+      "launch_url": "http://localhost",
+      "selenium_port": 4444,
+      "selenium_host": "localhost",
+      "silent": true,
+      "screenshots": {
+        "enabled": false
+      }
+    },
+    "firefox": {
+      "desiredCapabilities": {
+        "browserName": "firefox",
+        "version": "latest",
+        "platform": "WINDOWS"
+      }
+    },
+    "chrome": {
+      "desiredCapabilities": {
+        "browserName": "chrome",
+        "version": "latest",
+        "platform": "WINDOWS"
+      }
+    },
+    "safari9": {
+      "desiredCapabilities": {
+        "browserName": "safari",
+        "version": "9",
+        "platform": "MAC"
+      }
+    }
+  }
+}
